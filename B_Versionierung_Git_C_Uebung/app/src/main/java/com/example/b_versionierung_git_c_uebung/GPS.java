@@ -1,14 +1,16 @@
 package com.example.b_versionierung_git_c_uebung;
 
+import java.util.Date;
+
 public class GPS {
     private double longitude;
     private double lattitude;
-    private String myDate;
+    private Date myDate;
 
     public GPS() {
     }
 
-    public GPS(double longitude, double lattitude, String myDate) {
+    public GPS(double longitude, double lattitude, Date myDate) {
         this.longitude = longitude;
         this.lattitude = lattitude;
         this.myDate = myDate;
@@ -30,11 +32,11 @@ public class GPS {
         this.lattitude = lattitude;
     }
 
-    public String getMyDate() {
+    public Date getMyDate() {
         return myDate;
     }
 
-    public void setMyDate(String myDate) {
+    public void setMyDate(Date myDate) {
         this.myDate = myDate;
     }
 }
