@@ -3,6 +3,7 @@ package com.example.b_versionierung_git_c_uebung;
 import java.util.Date;
 
 public class GPS {
+
     private double longitude;
     private double lattitude;
     private Date myDate;
@@ -10,6 +11,8 @@ public class GPS {
     public GPS() {
     }
 
+    public GPS(double longitude, double lattitude, Date myDate) {
+  
     public GPS(double longitude, double lattitude, Date myDate) {
         this.longitude = longitude;
         this.lattitude = lattitude;
