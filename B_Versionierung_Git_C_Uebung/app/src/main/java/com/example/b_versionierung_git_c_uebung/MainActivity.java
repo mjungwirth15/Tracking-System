@@ -1,12 +1,13 @@
 package com.example.b_versionierung_git_c_uebung;
 
+import android.content.Intent;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
-import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -70,4 +71,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     public void onProviderDisabled(String provider) {
 
     }
+
+public void werteAnzeigen(View source)
+{
+    Intent intent = new Intent(this,Tabellen.class);
+    startActivity(intent);
+}
 }
