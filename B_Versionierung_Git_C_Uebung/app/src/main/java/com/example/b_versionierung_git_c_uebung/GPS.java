@@ -1,17 +1,17 @@
 package com.example.b_versionierung_git_c_uebung;
 
 public class GPS {
-    float longitude;
-    float lattitude;
+    double longitude;
+    double lattitude;
     String myDate;
 
-    public GPS(float longitude, float lattitude, String myDate) {
+    public GPS(double longitude, double lattitude, String myDate) {
         this.longitude = longitude;
         this.lattitude = lattitude;
         this.myDate = myDate;
     }
 
-    public float getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
@@ -19,7 +19,7 @@ public class GPS {
         this.longitude = longitude;
     }
 
-    public float getLattitude() {
+    public double getLattitude() {
         return lattitude;
     }
 
