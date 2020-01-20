@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">B_Versionierung_Git_C_Uebung</string>
+    <string name="app_name">Tracking-System</string>
+
+    <string name="textViewLongitude"> </string>
+    <string name="textViewLatitude"> </string>
+    <string name="textViewDate"> </string>
+    <string name="btnAnzeigen">Anzeigen</string>
 </resources>
