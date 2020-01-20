@@ -27,11 +27,11 @@ ArrayList<GPS> al = new ArrayList<>();
         MySQLiteHelper dbhelper = new MySQLiteHelper(this);
         SQLiteDatabase db = dbhelper.getReadableDatabase();
         Cursor rows = db.rawQuery(
-                "SELECT longitude,lattitude,myDate " +
+                "SELECT * " +
                         "FROM GPS",null);
 
         while(rows.moveToNext()) {
-           GPS gps = new GPS(12.2222,12.3333,"12.12.2012 12:03");
+           GPS gps = new GPS(rows.getDouble(0),rows.getDouble(1),rows.getString(2));
             al.add(gps);
         }
 
